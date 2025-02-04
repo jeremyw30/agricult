@@ -7,6 +7,13 @@
 </head>
 <body>
   <h1>home</h1>
-  
+  <?php
+if(isset($data['users']) && (!empty($data['users']))){
+  foreach($data['users'] as $user){
+    echo '<p>'.$user->email.'</p>';
+  }
+}
+
+?>
 </body>
 </html>
