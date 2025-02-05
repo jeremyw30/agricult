@@ -1,33 +1,25 @@
 <?php
 
+require_once ROOT . 'utils/server_time.php';
+
 class Pages extends Controller {
 
-private $pageModel;
+    private $pageModel;
 
+    public function __construct() {
+        $this->pageModel = $this->model('page');
+    }
 
+    public function index() {
+        $serverTimeData = getServerTime();
+        $data = [
+            'serverTime' => $serverTimeData['serverTime'],
+            'serverYear' => $serverTimeData['serverYear'],
+            'serverMonth' => $serverTimeData['serverMonth'],
+            'serverDay' => $serverTimeData['serverDay'],
+            'currentSeason' => $serverTimeData['currentSeason']
+        ];
 
-  public function __construct() {
-    $this->pageModel = $this->model('page');
-   
-}
-
-
-public function index()
-{
-
-$users=$this->pageModel->listUser();
-
-$data=['users'=> $users];
-
-
-$this->view('main/index',$data);
-
-}
-
-
-
-
-
-
-
+        $this->view('main/index', $data);
+    }
 }
