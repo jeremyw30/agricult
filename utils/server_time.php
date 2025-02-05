@@ -65,4 +65,4 @@ function getServerTime() {
         'serverTime' => date('Y-m-d H:i', $serverTime)
     ];
 }
-// Demander à denis , sur la video ..a la minute 8.19
+// Demander à denis , sur la new video à la minute 8.19
