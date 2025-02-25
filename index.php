@@ -7,7 +7,7 @@ define("WWW_ROOT", rtrim($_SERVER['REQUEST_SCHEME']."://".$_SERVER['HTTP_HOST'].
 // On appelle le modèle et le contrôleur principaux
    //Requiert les librairies génériques
   
-   require_once (ROOT.'libraries/Controller.php');
+require_once (ROOT.'libraries/Controller.php');
 require_once (ROOT.'libraries/Database.php');
 
 //require_once (ROOT.'helpers/session_helper.php');

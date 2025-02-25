@@ -1,6 +1,6 @@
 <?php
 
-require_once ROOT . 'utils/server_time.php';
+
 
 class Pages extends Controller {
 
@@ -11,15 +11,11 @@ class Pages extends Controller {
     }
 
     public function index() {
-        $serverTimeData = getServerTime();
-        $data = [
-            'serverTime' => $serverTimeData['serverTime'],
-            'serverYear' => $serverTimeData['serverYear'],
-            'serverMonth' => $serverTimeData['serverMonth'],
-            'serverDay' => $serverTimeData['serverDay'],
-            'currentSeason' => $serverTimeData['currentSeason']
-        ];
+        
 
-        $this->view('main/index', $data);
+        $this->view('main/index');
+
     }
+
+    
 }

@@ -1,0 +1,28 @@
+.server-time-box .card {
+  width: 330px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: center;
+}
+.meteo {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.meteo-left,
+.meteo-right {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  width: 150px;
+  height: auto;
+}
+.meteo-left img,
+.meteo-right img {
+  width: 130px;
+  height: auto;
+}
