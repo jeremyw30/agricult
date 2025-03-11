@@ -1,4 +1,3 @@
-<!-- filepath: /c:/laragon/www/agricult/views/main/index.php -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,6 +8,19 @@
 </head>
 <body>
     <h1>Welcome to the Main Page</h1>
-    <?php include(ROOT . 'views/components/server_time_box.php'); ?>
+    <?php
+    // Start output buffering
+    ob_start();
+    require_once ROOT ."controllers/Times.php";
+    // Call the Time controller's index method
+    $timeController = new Time();
+    $timeController->index();
+    
+    // Get the output and clean the buffer
+    $serverTimeBox = ob_get_clean();
+    
+    // Include the output in the view
+    echo $serverTimeBox;
+    ?>
 </body>
 </html>

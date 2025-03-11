@@ -1,7 +1,7 @@
 <?php
 // filepath: /c:/laragon/www/agricult/utils/server_time.php
 // Define constants
-define('REAL_TO_SERVER_RATIO', 4); // 1 real day = 4 server days
+define('REAL_TO_SERVER_RATIO', 3); // 1 real day = 3 server days
 define('DAYS_IN_MONTH', 30);
 define('DAYS_IN_SEASON', 90);
 // Set locale to ensure date parsing works correctly

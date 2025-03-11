@@ -1,0 +1,207 @@
+.gold{
+    color: #ab9159;
+}
+
+.champain{
+    color: #836d41;
+}
+
+.stretch{
+    list-style: none;
+}
+
+.card .content{
+    position: left; /* Position the background text */
+  top: 0; /* At the bottom. Use top:0 to append it to the top */
+  width: 50%; /* Full width */
+  padding: 10px; /* Some padding */
+}
+
+.banner{
+   
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    height:40vh;
+}
+
+.banner .img-fluid {
+    max-width: 100%;
+    height:70%;
+  }
+
+.banner_image1{
+    background-image: url("../images/pressage_banner.jpg") ;
+}
+
+.banner_image2{
+    background-image: url("../images/blocage_banner.jpg") ;
+}
+
+.banner_image3{
+    background-image: url("../images/tissage_banner.jpg") ;
+}
+
+.banner_image4{
+    background-image: url("../images/tissage3_banner.jpg") ;
+}
+
+.invalidFeedback {
+    color: #ff0000;
+    display: block;
+}
+
+footer{
+    background-color:#f7f7f9;
+}
+
+.back{
+   background-color:white;
+   margin: 1em;
+   padding: 1.5em;
+
+}
+
+.backy{
+    background-color:white;
+}
+.close {
+    position: relative;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+  }
+  .close:hover::before, .close:hover::after {
+    background: #c5ac1e;
+  }
+  .close::before, .close::after {
+    content: "";
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    margin-top: -1px;
+    background: #000;
+  }
+  .close::before {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+  .close::after {
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .close.heavy::before, .close.heavy::after {
+    height: 3px;
+    margin-top: -3px;
+  }
+
+  /* Style the submit button */
+form.form-inline button {
+  float: left;
+  width: 20%;
+  padding: 10px;
+  background: #f3b121;
+  color: white;
+  font-size: 17px;
+  border: 1px solid #f3b121;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+form.form-inline button:hover {
+  background: #b9a16d;
+}
+
+/* Clear floats */
+form.form-inline::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+@font-face {
+ font-family: 'Audrey Regular';
+ font-style: normal;
+ font-weight: normal;
+ src: local('Audrey Regular'),
+ url('../webfonts/Audrey-Normal.woff') format('woff');
+ }
+
+
+ @font-face {
+   font-family: 'Audrey Italic';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Audrey Italic'),
+   url('../webfonts/Audrey-NormalOblique.woff') format('woff');
+ }
+
+
+ @font-face {
+   font-family: 'Audrey Medium';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Audrey Medium'),
+   url('../webfonts/Audrey-Medium.woff') format('woff');
+ }
+
+
+ @font-face {
+   font-family: 'Audrey Medium Oblique';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Audrey Medium Oblique'),
+   url('../webfonts/Audrey-MediumOblique.woff') format('woff');
+ }
+
+
+ @font-face {
+   font-family: 'Audrey Bold';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Audrey Bold'),
+   url('../webfonts/Audrey-Bold.woff') format('woff');
+ }
+
+
+ @font-face {
+   font-family: 'Audrey Bold Italic';
+   font-style: normal;
+   font-weight: normal;
+   src: local('Audrey Bold Italic'),
+   url('../webfonts/Audrey-BoldOblique.woff') format('woff');
+ }
+
+ h1.audrey {
+   
+   font-family: 'Audrey Regular';
+   font-style: normal;
+   font-weight: normal;
+   
+   color: #ab9159;  
+ }
+
+ h3.audrey {
+
+   font-family: 'Audrey Medium';
+   font-style: normal;
+   font-weight: normal;
+ }
+
+ @media only screen and (max-width: 768px){
+  #cache{
+    display:none;
+  }
+}
+  
